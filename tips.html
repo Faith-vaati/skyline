@@ -12,4 +12,34 @@ Gradients in CSS are a way to transition between colors across the distance of a
 gradient-type(
   color1,
   color2
+);
+
+
+
+Gradients can use as many colors as you want like this:
+
+gradient-type(
+  color1,
+  color2,
+  color3
+);
+
+
+
+You can specify where you want a gradient transition to complete by adding it to the color like this:
+
+gradient-type(
+  color1,
+  color2 20%,
+  color3
+);
+
+
+Gradient transitions often gradually change from one color to another. You can make the change a solid line like this:
+
+linear-gradient(
+  var(--first-color) 0%,
+  var(--first-color) 40%,
+  var(--second-color) 40%,
+  var(--second-color) 80%
 ); -->
